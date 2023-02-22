@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time tracking dashboard</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <section id="planner">
+          <div id="avatar">
+            <img
+              src="https://github.com/brunogoncalvesferreira.png"
+              alt="imagem de um usuário"
+            />
+            <div class="info">
+              <p>report for</p>
+              <h2>Bruno Gonçalves</h2>
+            </div>
+          </div>
+          <span>Daily</span>
+          <span>Weekly</span>
+          <span>Monthly</span>
+        </section>
+      </aside>
+      <main>
+        <div class="relative red-1">
+          <img src="./images/icon-work.svg" alt="icone de uma mala" />
+
+          <div class="card-info">
+            <header>
+              <strong id="title">Work</strong>
+              <i class="ph-dots-three-outline"></i>
+            </header>
+            <h1>32hrs</h1>
+            <p>Last Week - <span id="hour">36hrs</span></p>
+          </div>
+        </div>
+
+        <div class="relative blue">
+          <img src="./images/icon-play.svg" alt="icone de uma console game" />
+
+          <div class="card-info">
+            <header>
+              <strong id="title">Play</strong>
+              <i class="ph-dots-three-outline"></i>
+            </header>
+            <h1>32hrs</h1>
+            <p>Last Week - <span id="hour">36hrs</span></p>
+          </div>
+        </div>
+
+        <div class="relative red-2">
+          <img src="./images/icon-study.svg" alt="icone de livro" />
+
+          <div class="card-info">
+            <header>
+              <strong id="title">Study</strong>
+              <i class="ph-dots-three-outline"></i>
+            </header>
+            <h1>32hrs</h1>
+            <p>Last Week - <span id="hour">36hrs</span></p>
+          </div>
+        </div>
+
+        <div class="relative green">
+          <img
+            src="./images/icon-exercise.svg"
+            alt="icone de uma pessoa correndo"
+          />
+
+          <div class="card-info">
+            <header>
+              <strong id="title">Exercise</strong>
+              <i class="ph-dots-three-outline"></i>
+            </header>
+            <h1>32hrs</h1>
+            <p>Last Week - <span id="hour">36hrs</span></p>
+          </div>
+        </div>
+
+        <div class="relative violet">
+          <img
+            src="./images/icon-social.svg"
+            alt="icone de balão de conversas"
+          />
+
+          <div class="card-info">
+            <header>
+              <strong id="title">Social</strong>
+              <i class="ph-dots-three-outline"></i>
+            </header>
+            <h1>32hrs</h1>
+            <p>Last Week - <span id="hour">36hrs</span></p>
+          </div>
+        </div>
+
+        <div class="relative orange">
+          <img src="./images/icon-self-care.svg" alt="icone de coração" />
+
+          <div class="card-info">
+            <header>
+              <strong id="title">Self Care</strong>
+              <i class="ph-dots-three-outline"></i>
+            </header>
+            <h1>32hrs</h1>
+            <p>Last Week - <span id="hour">36hrs</span></p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
