@@ -2,23 +2,41 @@ const dailyButton = document.getElementById("daily")
 const weeklyButton = document.getElementById("weekly")
 const monthlyButton = document.getElementById("monthly")
 
-const teste = document.querySelector(".teste")
-const teste2 = document.querySelector("#hour")
-
 const response = await fetch("data.json")
 const data = await response.json()
 
-dailyButton.addEventListener("click", () => {
-  teste.innerHTML = data[0].timeframes.daily.current + "hrs"
-  teste2.innerHTML = data[0].timeframes.daily.previous + "hrs"
-})
+const currentHours = document.querySelectorAll("h1")
+const hoursLastEeek = document.querySelectorAll("small")
 
-weeklyButton.addEventListener("click", () => {
-  teste.innerHTML = data[0].timeframes.weekly.current + "hrs"
-  teste2.innerHTML = data[0].timeframes.weekly.previous + "hrs"
-})
+function handleClickActionOnButtons() {
+  dailyButton.addEventListener("click", async () => {
+    currentHours.forEach((current, index) => {
+      current.innerHTML = data[index].timeframes.daily.current + "hrs"
+    })
 
-monthlyButton.addEventListener("click", () => {
-  teste.innerHTML = data[0].timeframes.monthly.current + "hrs"
-  teste2.innerHTML = data[0].timeframes.monthly.previous + "hrs"
-})
+    hoursLastEeek.forEach((previous, index) => {
+      previous.innerHTML = data[index].timeframes.daily.previous + "hrs"
+    })
+  })
+
+  weeklyButton.addEventListener("click", async () => {
+    currentHours.forEach((current, index) => {
+      current.innerHTML = data[index].timeframes.weekly.current + "hrs"
+    })
+
+    hoursLastEeek.forEach((previous, index) => {
+      previous.innerHTML = data[index].timeframes.weekly.previous + "hrs"
+    })
+  })
+
+  monthlyButton.addEventListener("click", async () => {
+    currentHours.forEach((current, index) => {
+      current.innerHTML = data[index].timeframes.monthly.current + "hrs"
+    })
+
+    hoursLastEeek.forEach((previous, index) => {
+      previous.innerHTML = data[index].timeframes.monthly.previous + "hrs"
+    })
+  })
+}
+handleClickActionOnButtons()
