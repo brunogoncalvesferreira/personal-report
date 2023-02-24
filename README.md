@@ -29,7 +29,7 @@ Acesse o site é comece a desenvolver vários templates com seus desafios <a hre
 
 Nesta aplicação a ideia é construir um tipo de dashboard onde mostra relatórios diários, semanais é mensais da rotina de uma pessoa. Tempo que se trabalhou durante o dia, o tempo que a pessoa passou jogando na semana entre outros.
 
-O que se aprendi com este desafio:
+O que  aprendi com este desafio:
 
 - Consumir arquivos Json
 - Usamos o método ForEach para percorrer elementos HTML que buscamos no JavaScript, é também que nós ajudou a percorrer o Index do Array Json para pegar dados especificos para consumir no front-end.
